@@ -35,8 +35,6 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('123456')
         ]);
 
-        // Tugas Input user berdasarkan data dan tipenya [ admin -> 1 ]
-
         User::create([
             'name' => 'Super Admin',
             'email' => 'Superadmin@email.com',
@@ -105,9 +103,7 @@ class DatabaseSeeder extends Seeder
             'email' => 'wd3@email.com',
             'type' => 15,
             'password' => bcrypt('12345')
-        ]);
-
-         // User tipe 0-User  
+        ]); 
 
         User::create([
             'name' => 'Dosen',
