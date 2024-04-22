@@ -14,10 +14,8 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     <!-- Scripts -->
-  <link rel="preload" as="style" href="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/build/assets/app-1bd03d06.css" />
-  <link rel="modulepreload" href="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/build/assets/app-c3828592.js" />
-  <link rel="stylesheet" href="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/build/assets/app-1bd03d06.css" />
-  <script type="module" src="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/build/assets/app-c3828592.js"></script>
+  <!-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) -->
+  <link rel="preload" as="style" href="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/build/assets/app-1bd03d06.css" /><link rel="modulepreload" href="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/build/assets/app-c3828592.js" /><link rel="stylesheet" href="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/build/assets/app-1bd03d06.css" /><script type="module" src="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/build/assets/app-c3828592.js"></script>
 </head>
 <body>
     <div id="app">

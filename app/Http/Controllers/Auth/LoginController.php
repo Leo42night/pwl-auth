@@ -61,12 +61,36 @@ class LoginController extends Controller
                 )
             )
         ) {
-            if (auth()->user()->type == 'admin') {
-                return redirect()->route('admin.home');
+            if (auth()->user()->type == 'adminuser') {
+                return redirect()->route('adminuser.home');
             } else if (auth()->user()->type == 'manager') {
                 return redirect()->route('manager.home');
             } else if (auth()->user()->type == 'superadmin') {
                 return redirect()->route('superadmin.home');
+            } else if (auth()->user()->type == 'admin') {
+                return redirect()->route('admin.home');
+            } else if (auth()->user()->type == 'akademik') {
+                return redirect()->route('akademik.home');
+            } else if (auth()->user()->type == 'direktur') {
+                return redirect()->route('direktur.home');
+            } else if (auth()->user()->type == 'dosen') {
+                return redirect()->route('dosen.home');
+            } else if (auth()->user()->type == 'keuangan') {
+                return redirect()->route('keuangan.home');
+            } else if (auth()->user()->type == 'lppm') {
+                return redirect()->route('lppm.home');
+            } else if (auth()->user()->type == 'mahasiswa') {
+                return redirect()->route('mahasiswa.home');
+            } else if (auth()->user()->type == 'sdm') {
+                return redirect()->route('sdm.home');
+            } else if (auth()->user()->type == 'tendik') {
+                return redirect()->route('tendik.home');
+            } else if (auth()->user()->type == 'wd1') {
+                return redirect()->route('wd1.home');
+            } else if (auth()->user()->type == 'wd2') {
+                return redirect()->route('wd2.home');
+            } else if (auth()->user()->type == 'wd3') {
+                return redirect()->route('wd3.home');
             } else {
                 return redirect()->route('home');
             }

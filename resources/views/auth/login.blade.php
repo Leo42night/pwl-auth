@@ -8,7 +8,8 @@
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
+                    <!-- <form method="POST" action="{{ route('login') }}"> -->
+                      <form method="POST" action="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/login">
                         @csrf
 
                         <div class="row mb-3">
