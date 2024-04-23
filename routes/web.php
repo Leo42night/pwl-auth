@@ -38,7 +38,7 @@ Route::get('/', function () {
         }
     } else {$home = '/home';}
     return view('welcome')->with('home', $home);
-});
+})->name('welcome');
 
 Auth::routes();
 
