@@ -78,72 +78,72 @@ Route::middleware(['auth', 'user-access:superadmin'])->group(function () {
 Route::middleware(['auth', 'user-access:admin'])->group(function () {
     Route::get('/admin/home', function(){
         return view('admin.blade.php');
-    });
+    })->name('admin.home');
 });
 
 Route::middleware(['auth', 'user-access:akademik'])->group(function () {
     Route::get('/akademik/home', function(){
         return view('akademik.blade.php');
-    });
+    })->name('akademik.home');
 });
 
 Route::middleware(['auth', 'user-access:direktur'])->group(function () {
     Route::get('/direktur/home', function(){
         return view('direktur.blade.php');
-    });
+    })->name('direktur.home');
 });
 
 Route::middleware(['auth', 'user-access:dosen'])->group(function () {
     Route::get('/dosen/home', function(){
         return view('dosen.blade.php');
-    });
+    })->name('dosen.home');
 });
 
 Route::middleware(['auth', 'user-access:keuangan'])->group(function () {
     Route::get('/keuangan/home', function(){
         return view('keuangan.blade.php');
-    });
+    })->name('keuangan.home');
 });
 
 Route::middleware(['auth', 'user-access:lppm'])->group(function () {
     Route::get('/lppm/home', function(){
         return view('lppm.blade.php');
-    });
+    })->name('lppm.home');
 });
 
 Route::middleware(['auth', 'user-access:mahasiswa'])->group(function () {
     Route::get('/mahasiswa/home', function(){
         return view('mahasiswa.blade.php');
-    });
+    })->name('mahasiswa.home');
 });
 
 Route::middleware(['auth', 'user-access:sdm'])->group(function () {
     Route::get('/sdm/home', function(){
         return view('sdm.blade.php');
-    });
+    })->name('sdm.home');
 });
 
 Route::middleware(['auth', 'user-access:tendik'])->group(function () {
     Route::get('/tendik/home', function(){
         return view('tendik.blade.php');
-    });
+    })->name('tendik.home');
 });
 
 Route::middleware(['auth', 'user-access:wd1'])->group(function () {
     Route::get('/wd1/home', function(){
         return view('wd1.blade.php');
-    });
+    })->name('wd1.home');
 });
 
 Route::middleware(['auth', 'user-access:wd2'])->group(function () {
     Route::get('/wd2/home', function(){
         return view('wd2.blade.php');
-    });
+    })->name('wd2.home');
 });
 
 Route::middleware(['auth', 'user-access:wd3'])->group(function () {
     Route::get('/wd3/home', function(){
         return view('wd3.blade.php');
-    });
+    })->name('wd3.home');
 });
 

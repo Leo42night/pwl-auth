@@ -15,7 +15,13 @@
 
     <!-- Scripts -->
   <!-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) -->
-  <link rel="preload" as="style" href="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/build/assets/app-1bd03d06.css" /><link rel="modulepreload" href="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/build/assets/app-c3828592.js" /><link rel="stylesheet" href="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/build/assets/app-1bd03d06.css" /><script type="module" src="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/build/assets/app-c3828592.js"></script>
+  <link rel="preload" as="style" href="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/build/assets/app-D-sv12UV.css" />
+  
+  <link rel="modulepreload" href="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/build/assets/app-CD_ffoPP.js" />
+  
+  <link rel="stylesheet" href="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/build/assets/app-D-sv12UV.css" />
+  
+  <script type="module" src="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/build/assets/app-CD_ffoPP.js"></script>
 </head>
 <body>
     <div id="app">
@@ -62,7 +68,9 @@
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    <!-- <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none"> -->
+                                  <form id="logout-form" action="https://ff38ff51-10d1-4397-801a-ce53bd0c1e6b-00-13gls7ei7dqee.sisko.replit.dev/logout" method="POST" class="d-none">
+
                                         @csrf
                                     </form>
                                 </div>

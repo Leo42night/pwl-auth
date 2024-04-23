@@ -22,12 +22,12 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-    {
+  {
         return view('home');
     }
     public function adminHome(): View
     {
-        return view('admin-home');
+        return view('adminuser-home');
     }
     /**
      * Show the application dashboard.
