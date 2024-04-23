@@ -77,73 +77,73 @@ Route::middleware(['auth', 'user-access:superadmin'])->group(function () {
 
 Route::middleware(['auth', 'user-access:admin'])->group(function () {
     Route::get('/admin/home', function(){
-        return view('admin.blade.php');
+        return view('admin-home');
     })->name('admin.home');
 });
 
 Route::middleware(['auth', 'user-access:akademik'])->group(function () {
     Route::get('/akademik/home', function(){
-        return view('akademik.blade.php');
+        return view('akademik-home');
     })->name('akademik.home');
 });
 
 Route::middleware(['auth', 'user-access:direktur'])->group(function () {
     Route::get('/direktur/home', function(){
-        return view('direktur.blade.php');
+        return view('direktur-home');
     })->name('direktur.home');
 });
 
 Route::middleware(['auth', 'user-access:dosen'])->group(function () {
     Route::get('/dosen/home', function(){
-        return view('dosen.blade.php');
+        return view('dosen-home');
     })->name('dosen.home');
 });
 
 Route::middleware(['auth', 'user-access:keuangan'])->group(function () {
     Route::get('/keuangan/home', function(){
-        return view('keuangan.blade.php');
+        return view('keuangan-home');
     })->name('keuangan.home');
 });
 
 Route::middleware(['auth', 'user-access:lppm'])->group(function () {
     Route::get('/lppm/home', function(){
-        return view('lppm.blade.php');
+        return view('lppm-home');
     })->name('lppm.home');
 });
 
 Route::middleware(['auth', 'user-access:mahasiswa'])->group(function () {
     Route::get('/mahasiswa/home', function(){
-        return view('mahasiswa.blade.php');
+        return view('mahasiswa-home');
     })->name('mahasiswa.home');
 });
 
 Route::middleware(['auth', 'user-access:sdm'])->group(function () {
     Route::get('/sdm/home', function(){
-        return view('sdm.blade.php');
+        return view('sdm-home');
     })->name('sdm.home');
 });
 
 Route::middleware(['auth', 'user-access:tendik'])->group(function () {
     Route::get('/tendik/home', function(){
-        return view('tendik.blade.php');
+        return view('tendik-home');
     })->name('tendik.home');
 });
 
 Route::middleware(['auth', 'user-access:wd1'])->group(function () {
     Route::get('/wd1/home', function(){
-        return view('wd1.blade.php');
+        return view('wd1-home');
     })->name('wd1.home');
 });
 
 Route::middleware(['auth', 'user-access:wd2'])->group(function () {
     Route::get('/wd2/home', function(){
-        return view('wd2.blade.php');
+        return view('wd2-home');
     })->name('wd2.home');
 });
 
 Route::middleware(['auth', 'user-access:wd3'])->group(function () {
     Route::get('/wd3/home', function(){
-        return view('wd3.blade.php');
+        return view('wd3-home');
     })->name('wd3.home');
 });
 
