@@ -19,24 +19,37 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     if(isset(auth()->user()->type)){
-        if(auth()->user()->type == 'admin'){
-            $home = '/admin/home';
+        if(auth()->user()->type == 'adminuser'){
+            $home = '/adminuser/home';
         } elseif (auth()->user()->type == 'manager') {
             $home = '/manager/home';
         } elseif (auth()->user()->type == 'superadmin') {
             $home = '/superadmin/home';
-        } elseif (auth()->user()->type == 'akademik') {
-            $home = '/akademik/home';
-        } elseif (auth()->user()->type == 'superadmin') {
-            $home = '/superadmin/home';
-        } elseif (auth()->user()->type == 'superadmin') {
-            $home = '/superadmin/home';
-        } elseif (auth()->user()->type == 'superadmin') {
-            $home = '/superadmin/home';
-        } elseif (auth()->user()->type == 'superadmin') {
-            $home = '/superadmin/home';
-        }
-    } else {$home = '/home';}
+        } elseif (auth()->user()->type == 'admin') {
+            $home = '/admin/home';
+        } elseif (auth()->user()->type == 'direktur') {
+            $home = '/direktur/home';
+        } elseif (auth()->user()->type == 'dosen') {
+            $home = '/dosen/home';
+        } elseif (auth()->user()->type == 'keuangan') {
+            $home = '/keuangan/home';
+        } elseif (auth()->user()->type == 'lppm') {
+            $home = '/lppm/home';
+        } elseif (auth()->user()->type == 'mahasiswa') {
+          $home = '/mahasiswa/home';
+      } elseif (auth()->user()->type == 'sdm') {
+          $home = '/sdm/home';
+      } elseif (auth()->user()->type == 'tendik') {
+          $home = '/tendik/home';
+      } elseif (auth()->user()->type == 'wd1') {
+          $home = '/wd1/home';
+      } elseif (auth()->user()->type == 'wd2') {
+          $home = '/wd2/home';
+      } elseif (auth()->user()->type == 'wd3') {
+          $home = '/wd3/home';
+      } else {$home = '/home';}
+    } 
+    else {$home = '/home';}
     return view('welcome')->with('home', $home);
 })->name('welcome');
 

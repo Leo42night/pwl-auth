@@ -16,6 +16,21 @@
 so you have to use an external database :(**
 
 ----
+## **MOD VERSI LOCAL**
+ketika mejalankan project ini di VS Code, buat perubahan pada file-file dibawah:
+
+[resoureces/views/layouts/app.blade.php]
+- `@vite(['resources/sass/app.scss', 'resources/js/app.js'])`
+- `<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">`
+
+[resoureces/views/login.blade.php] 
+- `<form method="POST" action="{{ route('login') }}">`
+
+[vite.config.js] 
++ `// https: true,`
+
+
+----
 
 ## About Laravel
 

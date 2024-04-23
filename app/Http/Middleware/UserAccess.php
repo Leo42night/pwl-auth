@@ -24,7 +24,9 @@ class UserAccess
         // '$usertype= ', $userType,
         // 'auth()->user()->type= '.auth()->user()->type]);
         // return response()->route('welcome', ['usertype' => $userType], '403');
-      return redirect()->route('welcome', ['usertype' => $userType]);
+      // return redirect()->route('welcome', ['usertype' => $userType]);
+
+      return redirect()->route('welcome');
     }
 
 }
